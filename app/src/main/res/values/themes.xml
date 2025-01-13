@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StyleIQ1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/arkaplan</item>
+
+    </style>
+
+    <style name="Theme.StyleIQ1" parent="Base.Theme.StyleIQ1" />
+</resources>

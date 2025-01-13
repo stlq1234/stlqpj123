@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/hosgeldiniz_ekrani">
+    <fragment
+        android:id="@+id/hosgeldiniz_ekrani"
+        android:name="com.example.styleiq1.hosgeldiniz_ekrani"
+        android:label="hosgeldiniz_ekrani" >
+        <action
+            android:id="@+id/action_hosgeldiniz_ekrani_to_giris_ekrani2"
+            app:destination="@id/giris_ekrani2" />
+        <action
+            android:id="@+id/action_hosgeldiniz_ekrani_to_kayitol_ekrani2"
+            app:destination="@id/kayitol_ekrani2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/giris_ekrani2"
+        android:name="com.example.styleiq1.giris_ekrani"
+        android:label="fragment_giris_ekrani"
+        tools:layout="@layout/fragment_giris_ekrani" >
+        <action
+            android:id="@+id/action_giris_ekrani2_to_yukleme_ekrani"
+            app:destination="@id/yukleme_ekrani" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kayitol_ekrani2"
+        android:name="com.example.styleiq1.kayitol_ekrani"
+        android:label="fragment_kayitol_ekrani"
+        tools:layout="@layout/fragment_kayitol_ekrani" >
+        <action
+            android:id="@+id/action_kayitol_ekrani2_to_yukleme_ekrani"
+            app:destination="@id/yukleme_ekrani" />
+    </fragment>
+    <fragment
+        android:id="@+id/yukleme_ekrani"
+        android:name="com.example.styleiq1.yukleme_ekrani"
+        android:label="fragment_yukleme_ekrani"
+        tools:layout="@layout/fragment_yukleme_ekrani" >
+        <action
+            android:id="@+id/action_yukleme_ekrani_to_fotografsec_ekrani"
+            app:destination="@id/fotografsec_ekrani" />
+        <action
+            android:id="@+id/action_yukleme_ekrani_to_hosgeldiniz_ekrani"
+            app:destination="@id/hosgeldiniz_ekrani" />
+        <action
+            android:id="@+id/action_yukleme_ekrani_to_havadurumu_ekrani"
+            app:destination="@id/havadurumu_ekrani" />
+    </fragment>
+    <fragment
+        android:id="@+id/fotografsec_ekrani"
+        android:name="com.example.styleiq1.fotografsec_ekrani"
+        android:label="fragment_fotografsec_ekrani"
+        tools:layout="@layout/fragment_fotografsec_ekrani" />
+    <fragment
+        android:id="@+id/havadurumu_ekrani"
+        android:name="com.example.styleiq1.havadurumu_ekrani"
+        android:label="havadurumu_ekrani">
+        <action
+            android:id="@+id/action_havadurumu_ekrani_to_kombin_ekrani"
+            app:destination="@id/KombinEkraniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/KombinEkraniFragment"
+        android:name="com.example.styleiq1.KombinEkraniFragment"
+        android:label="Kombin Ekranı"
+        tools:layout="@layout/fragment_kombin_ekrani" />
+    <fragment
+        android:id="@+id/kombin_ekrani"
+        android:name="com.example.styleiq1.KombinEkraniFragment"
+        tools:layout="@layout/fragment_kombin_ekrani">
+    </fragment>
+
+
+
+</navigation>

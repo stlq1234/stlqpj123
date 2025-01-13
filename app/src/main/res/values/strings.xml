@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">styleIQ1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kombin_image">Kombin Resmi</string>
+    <string name="shoes_image">Ayakkabı Resmi</string>
+    <string name="short_image">Şort Resmi</string>
+    <string name="shirt_image">Gömlek Resmi</string>
+    <string name="sunglass_image">Güneş Gözlüğü Resmi</string>
+    <string name="hat_image">Şapka Resmi</string>
+    <string name="jacket_image">Ceket Resmi</string>
+    <string name="pant_image">Pantolon Resmi</string>
+    <string name="weather_icon">Hava durumu Resmi</string>
+</resources>
